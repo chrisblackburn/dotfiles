@@ -1,0 +1,27 @@
+[push]
+   default = simple
+[user]
+  name = Chris Blackburn
+  email = christopher.blackburn@gmail.com
+[color]
+   diff = auto
+   status = auto
+   branch = auto
+[core]
+  autocrlf = input
+  editor = vi
+  quotepath = false
+[alias]
+  root = rev-parse --show-toplevel
+  currentbranch = !git branch --contains HEAD | grep '*' | tr -s ' ' | cut -d ' ' -f2
+  s = status
+  a = add
+  c = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  undo = reset HEAD^
+  mylog = log --author="Chris\\ Blackburn" --since="1\\ day\\ ago" --all --reverse --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s" --decorate
+[pull]
+  rebase = true
