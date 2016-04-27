@@ -14,4 +14,4 @@ For example:
 
 And for fish:
 
-`cd fish; stow .config`
+`cd fish; stow -t ../../.config .config`
