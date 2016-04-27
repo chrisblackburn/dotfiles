@@ -4,9 +4,9 @@
   name = Chris Blackburn
   email = christopher.blackburn@gmail.com
 [color]
-   diff = auto
-   status = auto
-   branch = auto
+  diff = auto
+  status = auto
+  branch = auto
 [core]
   autocrlf = input
   editor = vi
